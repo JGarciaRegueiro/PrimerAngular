@@ -1,0 +1,29 @@
+<h2>Listado de Videojuegos</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Valoración media</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Recorremos la lista y si pulsamos en alguna fila, ejecutaremos el método "mostrarDetalle",
+        pasandole el videojuego seleccionado con sus datos-->
+
+        <tr *ngFor="let videojuego of listaVideojuegos">
+            <td>{{ videojuego.id }}</td>
+            <td>{{ videojuego.titulo }}</td>
+            <td>{{ videojuego.valoracionMedia }}</td>
+        </tr>
+        <tr *ngIf="listaVideojuegos.length===0">
+            <td class="rojo" colspan="4">
+                NO SE HAN ENCONTRADO VIDEOJUEGOS
+            </td>
+
+        </tr>
+
+        
+    </tbody>
+</table>
+

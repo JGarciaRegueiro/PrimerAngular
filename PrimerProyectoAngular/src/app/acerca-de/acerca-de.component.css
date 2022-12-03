@@ -1,0 +1,9 @@
+h2,h3,p{
+    text-align: center;
+}
+body{
+    text-align: center;
+    display: block;
+    width:100%;
+    justify-content: center;
+}
