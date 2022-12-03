@@ -1,1 +1,22 @@
-<p>contacto works!</p>
+<section>
+    <form action=# method="POST">
+        
+        <fieldset class="form">
+            <h2>¡CONTACTA CON NOSOTROS!</h2>
+            <input class="form__inputs" type="text" name="Nombre" placeholder="Nombre*" required>
+            <input class="form__inputs" type="ape" name="Apellidos" placeholder="Apellidos*" required>
+            <input class="form__inputs" type="tel" name="Teléfono" placeholder="Teléfono*" required>
+            <input class="form__inputs" type="email" name="Email" placeholder="Email*" required>
+            <select name="contacto">
+                <option value="contact" selected disabled>¿Cómo quieres que te contactemos?</option>
+                <option value="Teléfono">Teléfono</option>
+                <option value="Mail">Email</option>
+            </select>
+            <textarea class="form__inputs textarea" name="Preguntas" placeholder="Preguntas" rows="10" cols="10"></textarea>
+            <div class="form__inputs--check">
+                <label for=""><input id="conditions" type="checkbox" name="check" required>Acepto las condiciones de la política de privacidad</label>
+            </div>
+            <input class="button" type="submit" value="Enviar">
+        </fieldset>            
+    </form>
+</section>
