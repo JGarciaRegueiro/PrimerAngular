@@ -7,18 +7,18 @@ export class Usuario{
      */
     //Datos que recogemos del formulario
 
-    _usuario : string = ""
-    _contraseña : string = ""
+    user : string = ""
+    pass : string = ""
 
    
-    constructor(private usuario : string, private contraseña : number){
-        this.usuario = usuario;
-        this.contraseña = contraseña;
+    constructor(private usuario : string, private contraseña : string){
+        this.user = usuario;
+        this.pass = contraseña;
     }
 
 
     public toString() : string{
-            return `Usuario: ${this.usuario}, Contraseña: ${this.contraseña}}`
+            return `Usuario: ${this.user}, Contraseña: ${this.pass}}`
     }
 
 

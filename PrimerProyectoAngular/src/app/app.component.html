@@ -1,4 +1,10 @@
 <!--En este fichero posicionaremos todos los componenetes que queramos, creando la estructura de la página-->
-<app-cabecera></app-cabecera>
-<router-outlet></router-outlet>
+<form action="#" *ngIf="logged==false">
+    <input type="text" [(ngModel)]="user" name="user"> 
+    <input type="text" [(ngModel)]="pass" name="pass">
+    <button (click)="login()">Acceder</button>
+</form>
+
+<app-cabecera *ngIf="logged==true"></app-cabecera>
+<router-outlet *ngIf="logged==true"></router-outlet>
 <app-pie-de-pagina></app-pie-de-pagina>

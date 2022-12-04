@@ -10,14 +10,14 @@ import {Location} from'@angular/common';
 
 export class DetalleComponent implements OnInit {
 
-  id : number;
-  titulo : string;
-  compania : string;
-  imagen : string;
-  valoracionMedia: number;
-
+  id : number
+  titulo : string 
+  compania: string
+  imagen: string 
+  valoracionMedia: number
 
   constructor(private route:ActivatedRoute, private location:Location){
+    
     this.id=route.snapshot.params["id"];
     this.titulo=route.snapshot.params["titulo"];
     this.compania=route.snapshot.params["compania"];
