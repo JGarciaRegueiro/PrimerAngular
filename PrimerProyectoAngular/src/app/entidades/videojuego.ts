@@ -19,7 +19,6 @@ export class Videojuego{
          */
         private static contadorId : number = 1;
 
-
         constructor(public id:number,public titulo : string, public compania : string, public imagen : string, public valoracionMedia : number){
             this.id = id;
             this.titulo = titulo;
