@@ -17,8 +17,6 @@ export class VideojuegosComponent implements OnInit {
   imagen: string = ""
   valoracionMedia: number = 0;
 
-
-
   //Habilitar y deshabilitar botones
   insertarDeshabilitado = false
   modificarBorrarDeshabilitado = true
@@ -30,25 +28,27 @@ export class VideojuegosComponent implements OnInit {
 
   //Datos que recogemos del formulario
   constructor(){
-      let videojuego : Videojuego = new Videojuego("Plantas vs Zombies","PopCap Games","url_imagen", 7.4)
+      let videojuego : Videojuego = new Videojuego(1,"Plantas vs Zombies","PopCap Games","url_imagen", 7.4)
       this.listaVideojuegos.push(videojuego)
-      videojuego = new Videojuego("Mario kart","Nintendo","url_imagen", 8.5)
+      videojuego = new Videojuego(2,"Mario kart","Nintendo","url_imagen", 8.5)
       this.listaVideojuegos.push(videojuego)
-      videojuego = new Videojuego("Donkey Kong","Nintendo","url_imagen", 8.3)
+      videojuego = new Videojuego(3,"Donkey Kong","Nintendo","url_imagen", 8.3)
       this.listaVideojuegos.push(videojuego)
-      videojuego = new Videojuego("Angry Birds","Roviio Entertainment Corporation","url_imagen", 7.2)
+      videojuego = new Videojuego(4,"Angry Birds","Roviio Entertainment Corporation","url_imagen", 7.2)
       this.listaVideojuegos.push(videojuego)
+      
   }
 
   public seleccionar (videojuego : Videojuego) : void{
-    console.log("Seleccionando...")
+   /**  console.log("Seleccionando...")
     
     this.id=videojuego.id
     this.titulo= videojuego.titulo
     this.compania=videojuego.compania
     this.imagen = videojuego.imagen
     this.valoracionMedia=videojuego.valoracionMedia
-
+    */
+   this.videojuego=videojuego;
   }
 
   ngOnInit(){

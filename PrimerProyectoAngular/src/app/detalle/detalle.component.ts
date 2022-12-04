@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Videojuego } from 'src/app/entidades/videojuego';
 import {Location} from'@angular/common';
+import { Videojuego } from '../entidades/videojuego';
+import { VideojuegosComponent } from '../videojuegos/videojuegos.component';
 
 @Component({
   selector: 'app-detalle',
@@ -10,16 +11,16 @@ import {Location} from'@angular/common';
 })
 
 export class DetalleComponent implements OnInit {
-  /**@Input() videojuego:Videojuego;
-  */
- constructor(private route:ActivatedRoute, private location:Location){
+@Input() videojuego : Videojuego;
 
- }
+constructor(private route:ActivatedRoute, private location:Location){
+  
+}
 
- goBack():void{
+goBack():void{
   this.location.back();
- }
-  ngOnInit(): void {
-  }
+}
+ngOnInit() {
+}
 
 }

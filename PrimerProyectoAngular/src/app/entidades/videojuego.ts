@@ -8,7 +8,6 @@ export class Videojuego{
          * Atributo privado que lleva el identificador únido del videojuego.
          * Sólo se permitirá acceder a él con el método get.
          */
-        private _id : number = 0;
         
 
         /**
@@ -21,8 +20,8 @@ export class Videojuego{
         private static contadorId : number = 1;
 
 
-        constructor(public titulo : string, public compania : string, public imagen : string, public valoracionMedia : number){
-            this._id = Videojuego.contadorId++;
+        constructor(public id:number,public titulo : string, public compania : string, public imagen : string, public valoracionMedia : number){
+            this.id = id;
             this.titulo = titulo;
             this.compania = compania;
             this.imagen = imagen;
@@ -30,12 +29,8 @@ export class Videojuego{
         }
 
 
-        public get id() : number{
-                return this._id;
-        }
-
         public toString() : string{
-                return `ID: ${this._id}, Titulo: ${this.titulo}, valoracionMedia: ${this.valoracionMedia}`
+                return `ID: ${this.id}, Titulo: ${this.titulo}, valoracionMedia: ${this.valoracionMedia}`
         }
 
 

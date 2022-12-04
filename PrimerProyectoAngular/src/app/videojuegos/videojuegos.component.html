@@ -10,7 +10,6 @@
     <tbody>
         <!--Recorremos la lista y si pulsamos en alguna fila, ejecutaremos el método "mostrarDetalle",
         pasandole el videojuego seleccionado con sus datos-->
-
         <tr routerLink="/detalle" *ngFor="let videojuego of listaVideojuegos" (click)="seleccionar(videojuego)">
             <td>{{ videojuego.id }}</td>
             <td>{{ videojuego.titulo }}</td>
