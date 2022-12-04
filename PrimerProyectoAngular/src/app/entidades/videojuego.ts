@@ -1,3 +1,5 @@
+
+
 //Clase que guarda los atributos de un videojuego
 export class Videojuego{
 
@@ -19,10 +21,10 @@ export class Videojuego{
         private static contadorId : number = 1;
 
 
-        constructor(public titulo : string, public compañia : string, public imagen : string, public valoracionMedia : number){
+        constructor(public titulo : string, public compania : string, public imagen : string, public valoracionMedia : number){
             this._id = Videojuego.contadorId++;
             this.titulo = titulo;
-            this.compañia = compañia;
+            this.compania = compania;
             this.imagen = imagen;
             this.valoracionMedia = valoracionMedia;
         }

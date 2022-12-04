@@ -11,7 +11,7 @@
         <!--Recorremos la lista y si pulsamos en alguna fila, ejecutaremos el método "mostrarDetalle",
         pasandole el videojuego seleccionado con sus datos-->
 
-        <tr *ngFor="let videojuego of listaVideojuegos">
+        <tr routerLink="/detalle" *ngFor="let videojuego of listaVideojuegos" (click)="seleccionar(videojuego)">
             <td>{{ videojuego.id }}</td>
             <td>{{ videojuego.titulo }}</td>
             <td>{{ videojuego.valoracionMedia }}</td>
@@ -24,5 +24,7 @@
         </tr>
     </tbody>
 </table>
+
+
 <h3>Haz click encima de un juego para verlo en detalle</h3>
 

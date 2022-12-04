@@ -10,6 +10,7 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { PieDePaginaComponent } from './pie-de-pagina/pie-de-pagina.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { DetalleComponent } from './detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     CabeceraComponent,
     PieDePaginaComponent,
     AcercaDeComponent,
-    ContactoComponent
+    ContactoComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,

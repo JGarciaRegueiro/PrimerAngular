@@ -11,6 +11,13 @@ export class VideojuegosComponent implements OnInit {
   listaVideojuegos : Videojuego[]= []
   videojuego : Videojuego | null = null 
 
+  id : number = 0
+  titulo : string = ""
+  compania: string = ""
+  imagen: string = ""
+  valoracionMedia: number = 0;
+
+
 
   //Habilitar y deshabilitar botones
   insertarDeshabilitado = false
@@ -32,6 +39,18 @@ export class VideojuegosComponent implements OnInit {
       videojuego = new Videojuego("Angry Birds","Roviio Entertainment Corporation","url_imagen", 7.2)
       this.listaVideojuegos.push(videojuego)
   }
+
+  public seleccionar (videojuego : Videojuego) : void{
+    console.log("Seleccionando...")
+    
+    this.id=videojuego.id
+    this.titulo= videojuego.titulo
+    this.compania=videojuego.compania
+    this.imagen = videojuego.imagen
+    this.valoracionMedia=videojuego.valoracionMedia
+
+  }
+
   ngOnInit(){
   }
 
