@@ -1,5 +1,9 @@
 
-    <div class="row">
-        {{videojuego.id}} - {{videojuego.titulo}} - {{videojuego.compania}} - {{videojuego.imagen}} - {{videojuego.valoracionMedia}}
+    <div class="detalle">
+        <p>ID: {{id}}</p>
+        <p>Título: {{titulo}}</p>
+        <p>Compañía: {{compania}} </p>
+        <img src={{imagen}} alt="imagen">
+        <p>Valoración Media: {{valoracionMedia}}</p>
+        <button (click)="goBack()">Volver</button>
     </div>
-<button (click)="goBack()">Volver</button>

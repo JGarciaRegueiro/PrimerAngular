@@ -10,7 +10,7 @@ const routes: Routes = [
   {path : 'acercaDe', component : AcercaDeComponent},
   {path : 'contacto', component : ContactoComponent},
   {path : 'videojuegos', component : VideojuegosComponent},
-  {path : 'detalle', component : DetalleComponent},
+  {path : 'detalle/:id/:titulo/:compania/:imagen/:valoracionMedia', component : DetalleComponent},
 ];
 
 @NgModule({

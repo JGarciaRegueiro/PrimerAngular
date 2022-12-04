@@ -34,7 +34,7 @@ export class VideojuegosComponent implements OnInit {
       this.listaVideojuegos.push(videojuego)
       videojuego = new Videojuego(3,"Donkey Kong","Nintendo","url_imagen", 8.3)
       this.listaVideojuegos.push(videojuego)
-      videojuego = new Videojuego(4,"Angry Birds","Roviio Entertainment Corporation","url_imagen", 7.2)
+      videojuego = new Videojuego(4,"Angry Birds","Roviio Entertainment Corporation","PrimerProyectoAngular\src\assets\img\angrybirds.jpeg", 7.2)
       this.listaVideojuegos.push(videojuego)
       
   }
