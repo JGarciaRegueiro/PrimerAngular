@@ -17,6 +17,7 @@ export class AppComponent {
   pass : string 
   
   logged : boolean = false
+  mensaje : string
 
   constructor(){
     let usuario : Usuario = new Usuario("user","pass")
@@ -33,6 +34,7 @@ export class AppComponent {
       return true;
     } else {
       this.logged=false;
+      this.mensaje="No se ha podido realizar el acceso, prueba con 'user' 'pass'";
       return false;
     }
   }

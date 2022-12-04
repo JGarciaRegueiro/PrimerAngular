@@ -33,11 +33,18 @@ fieldset {
     resize: none;
 }
 
-.button {
-    justify-content: center;
-    border: none;
-    border-radius: 0.8rem;
-    padding: 1.6rem;
-    font-weight: bold;
-    font-size: 1.6rem;
+.form select {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.6rem;
+}
+
+.form label {
+    font-size: 20px;
+}
+
+button {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.6rem;
 }

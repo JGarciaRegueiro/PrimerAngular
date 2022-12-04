@@ -23,6 +23,7 @@ export class DetalleComponent implements OnInit {
     this.compania=route.snapshot.params["compania"];
     this.imagen=route.snapshot.params["imagen"];
     this.valoracionMedia=route.snapshot.params["valoracionMedia"];
+    
   }
   
   goBack():void{

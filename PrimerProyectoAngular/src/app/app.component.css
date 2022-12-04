@@ -2,3 +2,19 @@ form {
     text-align: center;
 }
 
+legend {
+    font-size: 30px;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+p {
+    color: red;
+}
+
